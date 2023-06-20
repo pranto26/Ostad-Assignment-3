@@ -1,0 +1,18 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>AJAX GET Request</title>
+    </head>
+    <body>
+        <script src="./axiosConfig/axios.min.js" ></script>
+
+        <script>
+            ajaxGetRequest();
+
+        async function ajaxGetRequest(){
+            let response = await axios.get("https://crud.teamrabbil.com/api/v1/ReadProduct");
+             console.log("response", response);
+        }
+        </script>
+    </body>
+</html>

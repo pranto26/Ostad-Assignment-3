@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head><title>AJAX POST Request</title></head>
+
+    <body>
+        <script src="./axiosConfig/axios.min.js" ></script>
+        <script>
+
+            async function ajaxPostEwquest(){
+                let data ={name: "John Doe", email: "joghndoe@example.com"};
+                let response = await axios.post("http://api.example.com/submit", data);
+                console.log("response", response);
+            }
+        </script>
+    </body>
+</html>

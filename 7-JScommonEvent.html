@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Common Event</title>
+    </head>
+    <body>
+        <img id="myImage" src="./Images/javascript.png">
+        
+        <script>
+
+//a. Showing (x,y)Coordinate while click anywhere in this page
+document.addEventListener('click', function(event) {
+  var x = event.clientX; 
+  var y = event.clientY; 
+
+  alert('Clicked at coordinates: (' + x + ', ' + y + ')');
+});
+
+
+
+
+
+//b.
+// Showing keycode of pressed in keyboard
+document.addEventListener('keydown', function(event) {
+  var keyCode = event.keyCode || event.which; 
+  alert('Pressed Key is: ' + keyCode);
+});
+
+
+
+//c.
+//Changing Image when mouse over the image
+
+var image = document.getElementById('myImage');
+image.addEventListener('mouseover', function() {
+  image.src = './Images/react.png';
+});
+
+
+ </script> 
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Query Selector</title>
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    <body>
+        <p class="manupulate" id="1st" >This is first Paragraph</p>
+        <p class="no"  id="2nd">This is second Paragraph</p>
+        <p class="no" id="3rd" >This is Third Paragraph</p>
+        <p class="manupulate" id="4th">This is Fourth Paragraph</p>
+
+        
+    </body>
+    <script>
+        myFunction();
+
+        function myFunction(){
+           let res = document.querySelectorAll('.manupulate');
+           res.forEach(function(paragraph){
+            paragraph.classList.add('myclass');
+           })
+        }
+
+
+    </script>
+</html>

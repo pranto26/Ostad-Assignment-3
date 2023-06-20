@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           navigator.geolocation.getCurrentPosition(function(positon){
+
+            let latitude =positon.coords.latitude;
+            let longitute = positon.coords.longitude;
+
+            document.write(latitude + "</br>" + longitute);
+            })
+
+        </script>
+    </body>
+</html>

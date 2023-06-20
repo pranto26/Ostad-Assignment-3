@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window Object</title>
+    </head>
+    <body>
+        <button onclick="openWindow(url,height,width)">Click to open window</button>
+
+        <script>
+
+            function openWindow(url,height,width){
+                var left = (screen.width - width)/2;
+                var top = (screen.height - height)/2;
+
+                var options = 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top;
+
+                let result =open(url,'_blank',options);
+                document.write(result);
+            }
+
+            var url = 'https://www.example.com';
+            var width = 800;
+            var height = 600;
+
+
+        </script>
+
+
+
+    </body>
+</html>

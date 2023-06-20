@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manupulation Using CSS Class </title>
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+<body>
+    <p id="mypar" >This is MY Paragraph</p>
+    <button onclick="myFunction()" >Click Here</button>
+
+</body>
+
+<script>
+
+    function myFunction (){
+       let Paragraph= document.getElementById("mypar");
+       Paragraph.classList.add('highlight');
+    }
+
+
+</script>
+
+</html>
